@@ -1,22 +1,12 @@
-import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import { StatusBar } from "expo-status-bar";
+import { Redirect, router } from "expo-router";
+import {Text, View} from 'react-native';
 
-const index = () => {
+export default function App() {
   return (
-    <view style={style.container}>
-      <Text>Aditya</Text>
-    </view>
-  )
-}
-
-export default index
-const style = StyleSheet.create({
-  container: {
-    display: 'flex',
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    flex: 1,
-    justifyContent: 'center'
-
-  }
-})
+    <View className="flex-1 items-center justify-center bg-white">
+      <Text className="text-3xl font-pblack">Aditya!</Text>
+      <StatusBar style="auto"/>
+    </View>
+  );
+};
